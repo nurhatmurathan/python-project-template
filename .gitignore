@@ -120,7 +120,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+.env*
 .venv
 env/
 venv/
@@ -165,3 +165,7 @@ cython_debug/
 .local/
 
 *.override.yml
+
+
+# example files
+_ex*
