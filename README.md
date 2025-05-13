@@ -2,8 +2,6 @@
 
 This is a highly opinionated template for Python projects that provides a solid foundation for building modern Python applications with best practices and modern tooling.
 
-> **Note:** This project has been tested and verified only on macOS. While it may work on other operating systems, we cannot guarantee full compatibility.
-
 ---
 
 ## Prerequisites
