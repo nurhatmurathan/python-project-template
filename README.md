@@ -11,12 +11,12 @@ This is a highly opinionated template for Python projects that provides a solid 
 Before you begin, ensure you have the following installed:
 - Python 3.8 or higher
 - [uv](https://github.com/astral-sh/uv) - Fast Python package installer
-- [just](https://github.com/casey/just) - Command runner
+- Makefile - Command runner
 - Docker and Docker Compose - For containerization
 
 ## Quick Start
 
-1. On GitHub.com, navigate to the main page of the [repository](https://github.com/talgat-abdraimov/python-project-template).
+1. On GitHub.com, navigate to the main page of the [repository](https://github.com/nurhatmurathan/python-project-template).
 
 2. Above the file list, click **Use this template**.
 
@@ -49,17 +49,17 @@ Before you begin, ensure you have the following installed:
 
 10. Install development dependencies:
     ```bash
-    just dev-deps
+    make dev-deps
     ```
 
 11. Build the Docker container:
     ```bash
-    just build
+    make build
     ```
 
 12. Start the application:
     ```bash
-    just up
+    make up
     ```
 
 ## Project Structure
@@ -72,7 +72,7 @@ python-project-template/
 ├── .pre-commit-config.yaml  # Pre-commit hooks configuration
 ├── dev-requirements.in   # Development dependencies
 ├── requirements.in       # Production dependencies
-├── justfile             # Just commands
+├── Makefile             # Makefile commands
 └── docker-compose.yml   # Docker configuration
 ```
 
@@ -89,18 +89,18 @@ The following commands are available in the justfile:
 | `up` | Start the application |
 | `stop` | Stop the application |
 | `down` | Stop and remove containers |
-| `ruff` | Run code linting and formatting |
+| `format` | Run code linting and formatting |
 | `test` | Run tests |
 
 ## Development Tools
 
-### just
+### Makefile
 
-Just is a command runner that simplifies running project commands. You can install it using your package manager:
+Make is a command runner that simplifies running project commands. You can install it using your package manager:
 
-- macOS: `brew install just`
-- Linux: `sudo apt-get install just` or equivalent for your distribution
-- Windows: `choco install just` or `scoop install just`
+- macOS: `brew install make`
+- Linux: `sudo apt-get install make` or equivalent for your distribution
+- Windows: `choco install make` or `scoop install make`
 
 [see more](https://github.com/casey/just)
 
